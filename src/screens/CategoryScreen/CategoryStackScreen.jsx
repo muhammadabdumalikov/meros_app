@@ -7,8 +7,10 @@ const CategoryStack = createNativeStackNavigator()
 export default function CategoryStackScreen() {
     return (
         <>
-          <CategoryStack.Navigator>
-              <CategoryStack.Screen name="CategoryScreen" component={CategoryScreen}/>
+          <CategoryStack.Navigator screenOptions={{
+              headerShown: false
+          }}>
+              <CategoryStack.Screen name="Category" component={CategoryScreen}/>
           </CategoryStack.Navigator>
         </>
     )
